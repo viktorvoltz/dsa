@@ -1,3 +1,7 @@
+/**
+ * @author viktorvoltz
+ */
+
 class TicTacToe {
   static int row = 3, col = 3;
   static final int X = 1, O = -1, EMPTY = 0;
