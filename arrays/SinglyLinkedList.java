@@ -54,4 +54,39 @@ public class SinglyLinkedList<T> {
             return tail.getElement();
         }
     }
+
+    public void addFirst(T element) {
+        Node<T> newHead = new Node<T>(element, head);
+        if (isEmpty()) {
+            tail = head;
+        } else {
+            newHead.next = head;
+            head = newHead;
+        }
+        size += 1;
+    }
+
+    public void addLast(T element) {
+        Node<T> newTail = new Node<T>(element, null);
+        if (isEmpty()) {
+            head = newTail;
+        } else {
+            tail.setNext(newTail);
+        }
+        tail = newTail;
+        size += 1;
+    }
+
+    public T removeFirst() {
+        if (isEmpty()) {
+            return null;
+        }
+        T nextHead = head.getElement();
+        head = head.getNext();
+        size -= 1;
+        if (isEmpty()) {
+            tail = null;
+        }
+        return nextHead;
+    }
 }
