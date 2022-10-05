@@ -1,4 +1,4 @@
-package arrays.twoDarrays;
+package twoDarrays;
 
 public class TicTacToe {
     public static final int X = 1, O = -1, EMPTY = 0;

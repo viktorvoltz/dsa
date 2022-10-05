@@ -1,5 +1,3 @@
-package arrays;
-
 
 public class RemoveHighScore {
     static int[] scores = new int[7];
