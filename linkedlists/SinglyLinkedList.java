@@ -1,4 +1,4 @@
-package linkedlists;
+
 
 public class SinglyLinkedList<T> {
     // Node
