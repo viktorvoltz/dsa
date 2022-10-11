@@ -1,7 +1,5 @@
 package recursion;
 
-import java.math.BigInteger;
-
 class BinarySearch{
 
     public static boolean binarySearch(int[] data, int target, int low, int high){
