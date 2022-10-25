@@ -1,6 +1,7 @@
 
 class BinarySearch {
-
+    
+    // A nonrecursive implementation of binary search
     public static boolean binarySearchIterative(int[] data, int target) {
         int low = 0;
         int high = data.length - 1;
